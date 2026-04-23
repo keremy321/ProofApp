@@ -1,0 +1,59 @@
+# Dependencies
+/node_modules
+**/node_modules/
+
+# Build outputs
+/dist
+/build
+/out
+/bundle
+**/dist/
+**/build/
+
+# Frontend framework outputs (future-proof)
+/.next
+/.nuxt
+/.svelte-kit
+/.vite
+/.vercel
+/.turbo
+/.parcel-cache
+**/.next/
+**/.nuxt/
+**/.svelte-kit/
+**/.vite/
+**/.vercel/
+**/.turbo/
+**/.parcel-cache/
+
+# Hardhat artifacts and cache
+/artifacts
+/cache
+/typechain
+/typechain-types
+/types
+
+# Ignition deployment output
+/ignition/deployments
+
+# Coverage and test artifacts
+/coverage
+/.nyc_output
+/.gas-snapshot
+/snapshots
+
+# Environment files and secrets
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
