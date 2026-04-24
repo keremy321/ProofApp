@@ -27,14 +27,14 @@
 **/.parcel-cache/
 
 # Hardhat artifacts and cache
-/artifacts
-/cache
-/typechain
-/typechain-types
-/types
+/blockchain/artifacts
+/blockchain/cache
+/blockchain/typechain
+/blockchain/typechain-types
+/blockchain/types
 
 # Ignition deployment output
-/ignition/deployments
+/blockchain/ignition/deployments
 
 # Coverage and test artifacts
 /coverage
