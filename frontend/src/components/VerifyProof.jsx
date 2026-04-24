@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { hashFile } from "../lib/hashFile";
 import { getContractReadOnly } from "../lib/contract";
+import { formattedUnixTimestamp } from "../lib/formatters";
 
 export default function VerifyProof() {
   const [proofIdInput, setProofIdInput] = useState("");
@@ -130,7 +131,7 @@ export default function VerifyProof() {
                 </p>
                 <p>
                   <span className="text-zinc-400">Created at:</span>{" "}
-                  {result.proof.createdAt.toString()}
+                  {formattedUnixTimestamp(result.proof.createdAt)}
                 </p>
                 <p>
                   <span className="text-zinc-400">Revoked:</span>{" "}

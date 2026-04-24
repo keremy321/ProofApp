@@ -9,6 +9,7 @@
   "scripts": {
     "compile": "npm --prefix blockchain run compile",
     "test": "npm --prefix blockchain run test",
+    "node:local": "npm --prefix blockchain exec hardhat node",
     "deploy:local": "npm --prefix blockchain run deploy:local",
     "deploy:sepolia": "npm --prefix blockchain run deploy:sepolia",
     "abi:sync": "npm --prefix blockchain run abi:sync",

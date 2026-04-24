@@ -47,6 +47,7 @@ npm run compile
 # Contracts
 npm run compile
 npm run test
+npm run node:local
 npm run deploy:local
 npm run deploy:sepolia
 
@@ -58,6 +59,40 @@ npm run frontend:dev
 npm run frontend:build
 npm run frontend:lint
 ```
+
+## How To Run (Local)
+
+Use 3 terminals:
+
+1. Start local blockchain node:
+
+```bash
+npm run node:local
+```
+
+2. Deploy contract to local node:
+
+```bash
+npm run deploy:local
+```
+
+3. Set contract address in frontend env:
+
+```env
+VITE_CONTRACT_ADDRESS=0xYourDeployedContractAddress
+```
+
+4. Start frontend:
+
+```bash
+npm run frontend:dev
+```
+
+Optional for MetaMask local testing:
+
+- RPC URL: http://127.0.0.1:8545
+- Chain ID: 31337
+- Import one private key shown in the local node terminal.
 
 ## Environment Variables
 

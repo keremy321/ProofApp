@@ -2,6 +2,7 @@ import { useState } from "react";
 import WalletConnect from "./components/WalletConnect";
 import CreateProof from "./components/CreateProof";
 import VerifyProof from "./components/VerifyProof";
+import RevokeProof from "./components/RevokeProof";
 
 export default function App() {
   const [account, setAccount] = useState("");
@@ -21,8 +22,9 @@ export default function App() {
           <CreateProof account={account} />
         </div>
 
-        <div className="mt-6">
+        <div className="mt-6 grid gap-6 md:grid-cols-2">
           <VerifyProof />
+          <RevokeProof account={account} />
         </div>
       </div>
     </div>
